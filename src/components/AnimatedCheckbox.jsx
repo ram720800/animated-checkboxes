@@ -170,7 +170,7 @@ const AnimatedCheckbox = () => {
 
               <div className="relative overflow-hidden">
                 <motion.span
-                  className={`font-medium text-2xl inline-block ${isChecked ? "text-gray-500":"text-bl2"}`}
+                  className={`font-medium text-2xl inline-block whitespace-nowrap ${isChecked ? "text-gray-500":"text-bl2"}`}
                   animate={shakingItem === index ? "shake" : ""}
                   variants={shakeAnimation}
                 >
