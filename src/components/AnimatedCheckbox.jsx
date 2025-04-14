@@ -31,8 +31,8 @@ const AnimatedCheckbox = () => {
     },
   };
   return (
-    <div className="py-12 px-4 rounded-2xl shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5 hover:ring-[#fc75b2]/5 bg-wl1">
-      <div className="flex items-center pt-3 px-4 bg-gray-300 rounded-t-2xl -mx-4 -mt-12 border-b border-gray-400">
+    <div className="py-12 px-1 sm:px-4 rounded-2xl shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5 hover:ring-[#fc75b2]/5 bg-wl1">
+      <div className="flex items-center pt-3 px-1 sm:px-4 bg-gray-300 rounded-t-2xl -mx-[4px] sm:-mx-4 -mt-12 border-b border-gray-400">
         <div className="flex space-x-2 mr-4">
           <div className="size-3.5 rounded-full bg-[#FF605C]"></div>
           <div className="size-3.5 rounded-full bg-[#FFBD44]"></div>
@@ -170,7 +170,7 @@ const AnimatedCheckbox = () => {
 
               <div className="relative overflow-hidden">
                 <motion.span
-                  className={`font-medium text-2xl inline-block whitespace-nowrap ${isChecked ? "text-gray-500":"text-bl2"}`}
+                  className={`font-medium text-lg sm:text-2xl inline-block whitespace-nowrap ${isChecked ? "text-gray-500":"text-bl2"}`}
                   animate={shakingItem === index ? "shake" : ""}
                   variants={shakeAnimation}
                 >
@@ -180,7 +180,7 @@ const AnimatedCheckbox = () => {
                   {isChecked && (
                     <motion.div
                       key="strike"
-                      className="absolute left-0 top-1/2 h-[3px] w-full bg-[#915781]"
+                      className="absolute left-0 top-1/2 h-[2px] sm:h-[3px] w-full bg-[#915781]"
                       initial={{ scaleX: 0 }}
                       animate={{ scaleX: 1 }}
                       exit={{ scaleX: 0 }}

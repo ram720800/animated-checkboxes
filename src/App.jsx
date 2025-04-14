@@ -5,7 +5,7 @@ const text = "Animated Checkboxes";
 
 const App = () => {
   return (
-    <div className="min-h-screen w-full g1 pt-4">
+    <div className="h-screen w-screen g1 pt-4">
       <div className="font-extrabold text-2xl sm:text-5xl p-4 text-center text-[#915781]">
         {text.split("").map((l, i) => (
           <motion.span
